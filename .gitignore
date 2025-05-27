@@ -1,0 +1,12 @@
+*.db
+appsettings.Development.json
+bin/
+obj/
+*.db-shm
+*.db-wal
+.vscode/
+*.user
+*.suo
+*.DS_Store
+.env
+appsettings*.json

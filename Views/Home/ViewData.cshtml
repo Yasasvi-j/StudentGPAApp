@@ -1,0 +1,39 @@
+﻿@model List<StudentGPAApp.Models.Student>
+
+@{
+    ViewData["Title"] = "View Data";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/viewdata.css" />
+}
+
+
+<h2>All Student Records</h2>
+
+<div class="viewdata-container">
+    <table class="viewdata-table">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+                <th>GPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                foreach (var course in student.Courses)
+                {
+                    <tr>
+                        <td>@student.FirstName @student.LastName</td>
+                        <td>@course.CourseName</td>
+                        <td>@course.Grade</td>
+                        <td>@student.GPA</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
