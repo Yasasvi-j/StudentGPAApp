@@ -1,5 +1,4 @@
 *.db
-appsettings.Development.json
 bin/
 obj/
 *.db-shm
@@ -9,4 +8,3 @@ obj/
 *.suo
 *.DS_Store
 .env
-appsettings*.json
