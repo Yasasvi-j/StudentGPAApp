@@ -60,9 +60,10 @@ Follow these steps to set up and run the application on your local machine.
 
 ### 🧰 Prerequisites
 
-- [.NET 7.0 SDK or later](https://dotnet.microsoft.com/en-us/download)
+- [.NET 8.0 SDK or later](https://dotnet.microsoft.com/en-us/download)
 - (Optional) Visual Studio or Visual Studio Code
 - Git (for cloning the repository)
+- SQLite version 3.35.0 or higher.
 
 ### 🛠 Steps
 
@@ -78,10 +79,6 @@ Follow these steps to set up and run the application on your local machine.
    
 3. **Build the project**
 ```dotnet build
-    
-4. **Apply database migrations:**
-This sets up the local SQLite database schema.
-```dotnet ef database update
 
 5. **Run the application:**
 ```dotnet run
